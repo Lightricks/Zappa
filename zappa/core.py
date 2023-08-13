@@ -586,8 +586,8 @@ class Zappa:
 
         # Make sure that 'concurrent' is always forbidden.
         # https://github.com/Miserlou/Zappa/issues/827
-        if "concurrent" not in exclude:
-            exclude.append("concurrent")
+        # if "concurrent" not in exclude:
+        #     exclude.append("concurrent")
 
         def splitpath(path):
             parts = []
