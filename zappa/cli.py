@@ -2436,7 +2436,7 @@ class ZappaCLI:
                 disable_progress=self.disable_progress,
             )
         else:
-            exclude = self.stage_config.get("exclude", ["boto3", "dateutil", "botocore", "s3transfer", "concurrent"])
+            exclude = self.stage_config.get("exclude", ["boto3", "dateutil", "botocore", "s3transfer"])
 
             # Create a single zip that has the handler and application
             self.zip_path = self.zappa.create_lambda_zip(
